@@ -1,0 +1,14 @@
+{
+    "name": "ext.ccomplete",
+    "version": "1.0",
+    "main": "ccomplete.js",
+    "private": true,
+    "plugin": {
+        "provides": [
+            "ext.ccomplete"
+        ],
+        "consumes": [
+            "client-plugins"
+        ]
+    }
+}

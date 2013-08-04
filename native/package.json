@@ -1,0 +1,16 @@
+{
+  "name" : "ccomplete"
+  , "version" : "v1.0"
+  , "description" : "Native NodeJS extension for doing code completion based on Clang"
+  , "homepage" : ""
+  , "author" : { 
+      "name" : "Robin Dietrich"
+      , "email" : "me@invokr.org"
+      , "url" : "http://www.invokr.org/"
+    }
+  , "scripts" : {
+      "preinstall" : "node-waf configure && node-waf build"
+      , "preuninstall" : "rm -rf build/*"
+    }
+  , "main" : "build/Release/ccomplete.node"
+}

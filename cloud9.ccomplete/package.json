@@ -1,0 +1,12 @@
+{
+    "name": "cloud9.ccomplete",
+    "version": "1.0",
+
+    "main": "./ccomplete.js",
+
+    "plugin": {
+        "consumes": [
+            "ide"
+        ]
+    }
+}
