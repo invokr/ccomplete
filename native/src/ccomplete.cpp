@@ -300,10 +300,8 @@ std::string ccomplete::returnType(CXCursorKind ck) {
     }
 }
 
-extern "C" {
-    void RegisterModule(Handle<Object> target) {
-        ccomplete::Init(target);
-    }
+void InitAll(Handle<Object> exports) {
+    ccomplete::Init(exports);
 }
 
-NODE_MODULE(ccomplete, RegisterModule);
+NODE_MODULE(ccomplete, InitAll);
